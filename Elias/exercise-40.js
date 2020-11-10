@@ -37,10 +37,17 @@ arrPrinter(arr);
 // 3.
 const item = [1,2,3,4]
 
-
-for (let i of item) {
-    console.log(item[i]);
-    for (let j of item) {
-        console.log(item[j])
+const array1 = []
+const array2 = []
+for (let i = 1; i <= 4; i++){
+    
+    for (let j = 0; j < 3; j++ ){
+        for (let x = 0; x <= 4; x++ ){
+            array1.push(x);
+        }
+        array2.push(i);
     }
 }
+
+console.log(array1.join(' '));
+console.log(array2.join(' '));
