@@ -71,7 +71,7 @@ let number1 = [];
 
 for (let i = 1; i <= 3; i++) {
   for (let j = 0; j <= 4; j++) {
-    let counter = 0;
+    let counter = -1;
     number1.push(j);
     counter++;
   }
