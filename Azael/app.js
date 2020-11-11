@@ -37,7 +37,7 @@ let arr = [
 // row 1
 // ```
 
-let counter = 0;
+let counter = -1;
 for (let i of arr) {
   counter++;
   console.log(`Row ${counter}`);
