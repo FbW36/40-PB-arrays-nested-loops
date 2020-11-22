@@ -13,8 +13,9 @@ let starSum = "";
 
 function stars(array) {
   for (let item of array) {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 1; i < 5; i++) {
       starSum += item;
+      //console.log(starSum);
     }
   }
   return starSum;
@@ -41,16 +42,17 @@ let arrAllNumbers = [
   [3, 10, 26, 7],
 ];
 
-let arrNumber = [];
+let arrNumber = "";
 
 function getNumbers(arr) {
-  for (let item of arr) {
-    console.log("row", arr.indexOf(item));
-    for (let number of item) {
-      arrNumber.push(number);
+  for (i = 0; i < arr.length; i++) {
+    let indexArr = arr[i];
+    arrNumber += `Row ${i} \n`;
+    for (number of indexArr) {
+      arrNumber += `${number} \n`;
     }
-    return arrNumber;
   }
+  return arrNumber;
 }
 
 console.log(getNumbers(arrAllNumbers));
@@ -61,17 +63,23 @@ console.log(getNumbers(arrAllNumbers));
 
 //let number2 = 1;
 
-function getNumbers() {
-  let number2;
-  let sum;
-  for (let i = 0; i < 5; i++) {
-    sum = i;
-    console.log(sum);
-    for (let j = 0; j < 3; j++) {}
+function looploop(num, repeat) {
+  for (let i = 1; i < repeat; i++) {
+    for (let j = 1; j < num + 1; j++) {
+      console.log("looploop", i);
+    }
   }
-  return number2;
 }
 
-getNumbers(); //01234undefined01234
+looploop(3, 5); //
+
+function number2(num, repeat) {
+  for (let i = 1; i < repeat + 1; i++) {
+    for (let j = 0; j < num + 1; j++) {
+      console.log("last ==> ", j);
+    }
+  }
+}
+number2(4, 3);
 
 // NOTE: i need help and an explanation why there is an undefined.
